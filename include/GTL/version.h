@@ -1,4 +1,3 @@
-/* This software is distributed under the GNU Lesser General Public License */
 //==========================================================================
 //
 //   version.h.in - GTL version
