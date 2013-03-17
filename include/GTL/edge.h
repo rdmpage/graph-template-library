@@ -12,6 +12,7 @@
 #include <GTL/GTL.h>
 
 #include <list>
+#include <ostream> //@MTH needed for ostream in put-to  operator
 
 __GTL_BEGIN_NAMESPACE
  

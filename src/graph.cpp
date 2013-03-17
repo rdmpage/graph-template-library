@@ -25,7 +25,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-
+#include <cstring> //@MTH edit -- needed for strcmp
 #ifdef __GTL_MSVCC
 #   ifdef _DEBUG
 #	ifndef SEARCH_MEMORY_LEAKS_ENABLED
