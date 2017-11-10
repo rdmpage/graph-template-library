@@ -1,1 +1,15 @@
 Makefile
+
+*.lo
+*.la
+*.Po
+*.log
+
+
+config.status
+libtool
+
+src/.deps
+src/.libs
+
+test/.deps
