@@ -4,9 +4,13 @@ Makefile
 *.la
 *.Po
 *.log
+*~
 
+autom4te.cache
 
 config.status
+config/compile
+
 libtool
 
 src/.deps

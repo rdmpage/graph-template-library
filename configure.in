@@ -11,7 +11,8 @@
 
 # autoconf
 
-AC_INIT(src/graph.cpp)
+AC_INIT
+AC_CONFIG_SRCDIR([src/graph.cpp])
 AC_CONFIG_AUX_DIR(config)
 
 dnl -----------------------------------------------
@@ -67,9 +68,9 @@ AM_INIT_AUTOMAKE($PACKAGE, $VERSION)
 # libtool
 
 AC_PROG_CXX
-AC_LANG_CPLUSPLUS
+AC_LANG([C++])
 AC_DISABLE_STATIC
-AC_PROG_LIBTOOL
+LT_INIT
 
 LIBTOOL="$LIBTOOL --silent"
 
@@ -88,7 +89,7 @@ AC_CHECK_PROGS(doxygen, doxygen)
 # this section is generated automatically by Makefile.local
 # DO NOT MODIFY !!
 #
-AC_OUTPUT( \
+AC_CONFIG_FILES([\
   doc/Makefile \
   doc/userguide/Makefile \
   include/GTL/Makefile \
@@ -97,7 +98,8 @@ AC_OUTPUT( \
   Makefile \
   src/Makefile \
   tests/Makefile \
-)
+])
+AC_OUTPUT
 ### AC_OUTPUT END ###
 
 #---------------------------------------------------------------------------
